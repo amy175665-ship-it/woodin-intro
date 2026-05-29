@@ -1,4 +1,6 @@
-
+/* ==========================================================================
+   공통 레이아웃 설정
+   ========================================================================== */
 body {
     background-color: rgba(133, 133, 133, 0.322);
 }
@@ -10,7 +12,6 @@ main {
 
 /* ------------------------ 첫 번째 섹션: 우딘 메인페이지 ------------------------ */
 .indBox1 {
-    /* background-color: rgba(235, 235, 235, 0); */
     width: 100%;
     height: calc(100vh - 140px); 
     margin: 5px 0; 
@@ -18,34 +19,34 @@ main {
     position: relative;
     border-radius: 7px; 
 }
-    .indBox1 img {
-        display: block;
-        width: 100%;
-        height: 100%; 
-        object-fit: cover;
-        object-position: 50% 30%;
-    }
 
-    .intext1 {
-        position: absolute;  
-        top: 50%;           
-        left: 0%;   
-        color: #ffffff;     
-        font-size: 60px;
-        font-weight: 100;     
-        text-align: center;
-        width: 100%; 
+.indBox1 img {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: 50% 30%;
+}
 
-        transition: all 1.9s;
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    .intext1.on{
-        transform: translateY(-50%); 
-        opacity: 1;
-        transition-delay: 0.5s;
-    }
+.intext1 {
+    position: absolute;  
+    top: 50%;           
+    left: 0;   
+    color: #ffffff;     
+    font-size: 60px;
+    font-weight: 100;     
+    text-align: center;
+    width: 100%; 
+    transition: all 1.9s;
+    transform: translateY(100px);
+    opacity: 0;
+}
 
+.intext1.on {
+    transform: translateY(-50%); 
+    opacity: 1;
+    transition-delay: 0.5s;
+}
 
 /* ------------------------ 두 번째 섹션: BEST PRODUCT 영역 ------------------------ */
 .indBox2 {
@@ -56,444 +57,358 @@ main {
     align-items: center;
     justify-content: center; 
 }
-    .indBox2 span{
-        font-size: 55px;
-    } 
-    .indBox2 p{
-        font-size: 25px;
-    } 
-    .indBox2 > div:nth-child(1){
-        color: black;
-        /* background-color: aqua; */
-        width: 50%;
-        height: 50%;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.indBox2 span {
+    font-size: 55px;
+} 
 
-        text-align: center;
-        gap:20px;
+.indBox2 p {
+    font-size: 25px;
+} 
 
-        font-size: 30px;
+.indBox2 > div:nth-child(1) {
+    color: black;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 30px;
+    transform: translateY(100px);
+    opacity: 0;
+}
 
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    .indBox2 > div:nth-child(1).on{
-            transition: all 1.9s;
-            transform: translateY(0);
-            opacity: 1;
+.indBox2 > div:nth-child(1).on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.5s; 
+}
 
-            transition-delay: 0.5s; 
-        }
+.indBox2 > div:nth-child(2) {
+    width: 50%;
+    height: 80%;
+    border-radius: 7px;
+    overflow: hidden;
+}
 
-
-    .indBox2 > div:nth-child(2){
-        /* background-color: #111111; */
-        width: 50%;
-        height: 80%;
-        border-radius: 7px;
-        overflow: hidden;
-    }
-        .indBox2 img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-
-    
-
-
+.indBox2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ------------------------ 세 번째 섹션: CATEGORY 영역 ------------------------ */
-.indBox3{
+.indBox3 {
     width: 100%;
     height: 100vh;
     padding: 140px 0;
     position: relative;
-    /* background: #6d6d6d;  */
     overflow: hidden;
 }
-    .ind3_circle{
-        position: absolute;
-        background-color: rgb(255, 255, 255);
-        border-radius: 50%;
-        width: 890px;
-        height: 890px;
-        top:0;
-        left:50%;
-        transform: translateX(-50%);
-    }
 
-    .indBox3 img{
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            object-fit: cover;
-            border-radius: 7px;
+/* 배경 원만 공중에 띄워 맨 뒤로 보냅니다 */
+.ind3_circle {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 890px;
+    height: 890px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
 
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
+.indBox3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
 
-        .indBox3 img:hover{
-            transform: scale(0.95);
-        }
-    .upBox{
-        position: absolute;
-        width: 100%;
-        height: 350px;
-        /* background-color: skyblue; */
-        /* z-index: 10; */
-        display: flex;
-        
-        gap: 25px;
-        transform: translateY(10%);
-        font-size: 25px;
-    }
-         .upBox > div:nth-child(1){
-            flex:1;
-        } 
+.indBox3 img:hover {
+    transform: scale(0.95);
+}
 
-        .upBox > .intext3 {
-            flex:2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 30px;
+.upBox {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+}
 
-            transform: translateY(100px);
-            opacity: 0;
-        }
-            .intext3 span{
-                font-size: 55px;
-                font-weight: 200;
-                line-height: 70px;
+.upBox > div:nth-child(1) {
+    flex: 1;
+} 
 
-                margin-top: 20px;
-            }
-             .intext3.on{
-                transition: all 1.9s;
-                transform: translateY(0);
-                opacity: 1;
-                transition-delay: 0.5s; 
-             }
+.upBox > .intext3 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    transform: translateY(100px);
+    opacity: 0;
+}
 
-            .intext3 > p {
-            font-size: 17px;
-            margin-top: 20px;
-            } 
+.intext3 span {
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 70px;
+    margin-top: 20px;
+}
 
-        .upBox > div:nth-child(3){
-            flex:1;
-        } 
+.intext3.on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.5s; 
+}
 
+.intext3 > p {
+    font-size: 17px;
+    margin-top: 20px;
+} 
 
-    .downBox{
-        position: absolute;
-        display: flex;
-        gap:20px;
-        width: 100%;
-        height: 350px;
-        /* background: #6d6d6d;  */
-        margin-top: 400px;
-    }
-        .downBox > div{
-            flex: 1;
-        } 
-    
-        
-/* ------------------------ 네 번째 섹션: CATEGORY 영역 ------------------------ */
-        
+.upBox > div:nth-child(3) {
+    flex: 1;
+} 
+
+.downBox {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 350px;
+    margin-top: 50px; 
+}
+
+.downBox > div {
+    flex: 1;
+} 
+
+/* ------------------------ 네 번째 섹션: SHOWROOM 영역 ------------------------ */
 .indBox4 {
-    left: 0;
     width: 100%;
     height: 100vh;
-    
     display: flex;
     gap: 50px;
     margin-top: 80px;
     margin-bottom: 100px;
+    background-color: rgb(0, 0, 0);
 }
-    .indBox4 > div:nth-child(1) {
-        color: white;
-        width: 40%;
-        height: 100%;
-        /* background-color: rgb(55, 92, 107); */
-        
-        display: flex;
-        flex-direction: column;   
-        justify-content: center;
-        padding-right: 40px; 
 
-        text-align: end;
-        font-size: 25px;
-    }
-    
-        .indBox4 > div:nth-child(1) p {
-            font-size: 15px;
-        }
-
-    .indBox4 > div:nth-child(2) {
-        width: 60%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 7px;
-    }
-
-    .indBox4 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-        
-    }
-
-
-
-
-        
-/* ------------------------ 네 번째 섹션: SHOWROOM 영역 ------------------------ */
-.indBox4 {
-    width: 100%; 
-    height: 80vh;
-    /* margin-top: 80px; */
-    background-color: black;
-    display: flex ;
+.indBox4 > div:nth-child(1) {
+    color: white;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    padding-right: 40px; 
+    text-align: end;
+    font-size: 25px;
 }
-    .indBox4 div:nth-child(1){
-        width: 30%;
-        font-size: 25px;
-    }
-    .indBox4 div:nth-child(2){
-        width: 70%;
-        background-color: black;
-    }
 
+.indBox4 > div:nth-child(1) p {
+    font-size: 15px;
+}
 
+.indBox4 > div:nth-child(1) span {
+    font-size: 55px;
+}
+
+.indBox4 > div:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.indBox4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* ------------------------ 다섯번째 섹션: GALLERY 영역 ------------------------ */
 .indBox5 {
-    /* background-color: skyblue; */
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
-    .indBox5 > div:nth-child(1) {
-        display: flex;
-        flex-direction: column; 
-        justify-content: flex-end;
 
-        color: rgb(0, 0, 0);
-        width: 100%;
-        height: 20%;
-        /* background-color: #111111; */
+.indBox5 > div:nth-child(1) {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 20%;
+    gap: 20px;
+    font-size: 45px;
+    transform: translateY(25px);
+    opacity: 0;
+}
 
-        gap:20px;
-        font-size: 25px;
+.indBox5 > div:nth-child(1).on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.5s; 
+}
 
-        transform: translateY(25px);
-        opacity: 0;
-    }
-        .indBox5 > div:nth-child(1).on{
-            transition: all 1.9s;
-            transform: translateY(0);
-            opacity: 1;
+.indBox5 > div:nth-child(2) {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
 
-            transition-delay: 0.5s; 
-        }
+.gallery-item p {
+    font-size: 25px;
+    padding-top: 20px;
+    transform: translateY(50px);
+    opacity: 0;
+    color: rgb(105, 105, 105);
+}
 
+.gallery-item p.on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.8s; 
+}
 
-    .indBox5 > div:nth-child(2) {
-        width: 100%;
-        height: 60%;
+.indBox5 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 7px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        /* background-color: coral; */
-        object-fit: cover;
-
-        gap:40px;
-    }
-
-    
-        .gallery-item p{
-            font-size: 25px;
-            padding-top: 20px;
-
-            transform: translateY(50px);
-            opacity: 0;
-
-            color: rgb(105, 105, 105);
-        }
-        .gallery-item p.on{
-            transition: all 1.9s;
-            transform: translateY(0);
-            opacity: 1;
-
-            transition-delay: 0.8s; 
-        }
-        
-        .indBox5 img{
-            margin-top: -30px;
-            width: 400px;
-            height: 400px;
-            border-radius: 7px;
-
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .indBox5 img:hover{
-            transform: scale(0.95);
-        }
-         
+.indBox5 img:hover {
+    transform: scale(0.95);
+}
 
 /* ------------------------ 여섯번째 섹션: BRAND 영역 ------------------------ */
-.indBox6{
+.indBox6 {
     background-color: #ffffff;
     width: 100%;
     height: 100vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: relative;
+} 
+
+.indBox6 > div:nth-child(2) {
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;   
 }
 
-    /* 타이틀 맨 위 글씨 */
-    .indBox6 > div:nth-child(2){
-        text-align: center;
-        width: 100%;
-        height: 40%;
-        /* background-color: #444444; */
+.indBox6 > div:nth-child(2) span {
+    font-size: 48px;
+    transform: translateY(25px);
+    opacity: 0;
+}
 
-        display: flex; 
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items:center;
+.indBox6 > div:nth-child(2) span.on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.5s; 
+}
 
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* z-index: 10; */
+.indBox6 > div:nth-child(2) p {
+    font-size: 15px;
+    transform: translateY(25px);
+    opacity: 0;
+}
 
-        color: #ffffff;   
-    }
-        .indBox6 > div:nth-child(2) span{
-            font-size: 48px;
+.indBox6 > div:nth-child(2) p.on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.5s; 
+}
 
-            transform: translateY(25px);
-            opacity: 0;
-        }
-        .indBox6 > div:nth-child(2) span.on{
-            transition: all 1.9s;
-            transform: translateY(0);
-            opacity: 1;
-
-            transition-delay: 0.5s; 
-        }
-
-
-        .indBox6 > div:nth-child(2) p{
-            font-size: 15px;
-
-            transform: translateY(25px);
-            opacity: 0;
-        }
-        .indBox6 > div:nth-child(2) p.on{
-            transition: all 1.9s;
-            transform: translateY(0);
-            opacity: 1;
-
-            transition-delay: 0.5s; 
-        }
-
-
-
-
-
-
-    /* 아이콘 구역 */
-    .indBox6_2 {
+/* 아이콘 구역 */
+.indBox6_2 {
     width: 100%;
     height: 60%;
-    /* background-color: #ff9696; */
     color: rgb(255, 255, 255);
-
     display: flex; 
     justify-content: space-around; 
     align-items: center;           
-    
     padding-left: 90px;
     padding-right: 90px;
     box-sizing: border-box;       
-
     position: absolute;
     top: 40%;      
     left: 0;
-    }
+}
 
+.indBox6_2 > div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+    flex: 1;     
+    transform: translateY(25px);
+    opacity: 0;
+}
 
-    .indBox6_2 > div {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        text-align: center;     
-        flex: 1;     
-        
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    .indBox6_2 > div.on {
-        transition: all 1.9s;
-        transform: translateY(0);
-        opacity: 1;
+.indBox6_2 > div.on {
+    transition: all 1.9s;
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 1s; 
+}
 
-        transition-delay: 1s; 
-    }
+.indBox6_2 > div img {
+    width: 60px;            
+    height: 60px;           
+    margin-bottom: 40px;    
+}
 
-   
-    .indBox6_2 > div img {
-        width: 60px;            
-        height: 60px;           
-        /* object-fit: cover; */
-        margin-bottom: 40px;    
-    }
-        .indBox6_2 > div:nth-child(2) img {
-        transform: scale(1.15); /* 15% 더 크게 */
-        width: 70px;
-        height: 70px;
-        object-fit: contain;
-        margin-bottom: 40px; 
-    }
+.indBox6_2 > div:nth-child(2) img {
+    transform: scale(1.15); 
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 40px; 
+}
 
+.indBox6_2 > div span {
+    font-size: 28px;  
+    display: block;
+}
 
-    .indBox6_2 > div span {
-        font-size: 28px;  
-        display: block;
-    }
-
-    
-    .indBox6_2 > div p {
-        font-size: 18px;
-        line-height: 1.4;     
-        margin: 0;            
-    }
-
-       
-
-
-
-
-
-
-
+.indBox6_2 > div p {
+    font-size: 18px;
+    line-height: 1.4;     
+    margin: 0;            
+}
