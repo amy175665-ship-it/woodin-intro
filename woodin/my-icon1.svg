@@ -1,0 +1,14 @@
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="57.51px" height="64.356px" viewBox="0 0 57.51 64.356">
+<g>
+    <ellipse class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" cx="32.007" cy="32.182" rx="2.896" ry="2.868"></ellipse>
+    <line class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" x1="32.007" y1="29.5" x2="32.007" y2="17.809"></line>
+    <line class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" x1="34.661" y1="32.156" x2="48.979" y2="32.156"></line>
+    <circle class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" cx="32.007" cy="32.177" r="23.305"></circle>
+    <line class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" x1="32.007" y1="8.982" x2="32.007" y2="12.483"></line>
+    <line class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" x1="32.007" y1="51.872" x2="32.007" y2="55.373"></line>
+    <line class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" x1="55.203" y1="32.156" x2="51.702" y2="32.156"></line>
+    <line class="line1" fill="none" stroke="#fff" stroke-miterlimit="10" x1="12.312" y1="32.156" x2="8.812" y2="32.156"></line>
+    <path class="line2" fill="none" stroke="#fff" stroke-miterlimit="10" d="M32.007,61.988c-16.463,0-29.81-13.347-29.81-29.811 c0-16.462,13.347-29.809,29.81-29.809c9.08,0,17.21,4.06,22.678,10.462"></path>
+    <polyline class="line2" fill="none" stroke="#fff" stroke-miterlimit="10" points="54.686,7.365 54.686,12.831 49.22,12.831"></polyline>
+</g>
+</svg>

@@ -1,0 +1,18 @@
+<svg version="1.1" id="격리_모드" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="68px" viewBox="0 0 70 68">
+<g>
+    <g class="line1">
+        <path fill="none" stroke="#fff" stroke-miterlimit="10" d="M48.575,13h-8.4c0,2.319-1.881,4.2-4.2,4.2h-12.6c-2.319,0-4.2-1.881-4.2-4.2h-8.4v46.2h37.801"></path>
+        <path fill="none" stroke="#fff" stroke-miterlimit="10" d="M19.175,8.801V13c0,2.319,1.881,4.2,4.2,4.2h12.6c2.319,0,4.2-1.881,4.2-4.2V8.801H19.175z"></path>
+    </g>
+    <line fill="none" stroke="#fff" stroke-miterlimit="10" x1="27.575" y1="25.601" x2="43.325" y2="25.601"></line>
+    <line fill="none" stroke="#fff" stroke-miterlimit="10" x1="27.575" y1="38.2" x2="43.325" y2="38.2"></line>
+    <line fill="none" stroke="#fff" stroke-miterlimit="10" x1="27.575" y1="50.801" x2="43.325" y2="50.801"></line>
+    <polyline fill="none" stroke="#fff" stroke-miterlimit="10" points="15.155,36.281 18.125,39.25 22.579,34.796"></polyline>
+    <polyline fill="none" stroke="#fff" stroke-miterlimit="10" points="15.155,23.808 18.125,26.777 22.579,22.323"></polyline>
+    <polyline fill="none" stroke="#fff" stroke-miterlimit="10" points="15.155,49.008 18.125,51.978 22.579,47.523"></polyline>
+</g>
+<g class="line2">
+    <circle fill="none" stroke="#fff" stroke-miterlimit="10" cx="52.774" cy="16.15" r="5.25"></circle>
+    <path fill="none" stroke="#fff" stroke-miterlimit="10" d="M52.774,59.2h4.2l1.05-15.75h4.2v-12.6c0-5.22-4.23-9.45-9.45-9.45c-5.219,0-9.449,4.23-9.449,9.45v12.6h4.199l1.051,15.75H52.774z"></path>
+</g>
+</svg>
