@@ -136,6 +136,7 @@ main {
             border-radius: 7px;
 
             transition: transform 0.3s ease;
+            cursor: pointer;
         }
 
         .indBox3 img:hover{
@@ -348,6 +349,7 @@ main {
             border-radius: 7px;
 
             transition: transform 0.3s ease;
+            cursor: pointer;
         }
         .indBox5 img:hover{
             transform: scale(0.95);
